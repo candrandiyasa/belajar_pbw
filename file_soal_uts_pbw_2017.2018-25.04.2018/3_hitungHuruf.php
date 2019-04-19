@@ -1,7 +1,7 @@
 <?php 
     function checkHuruf($input){
         $input = str_replace(' ','', $input); // menghilangkan spasi
-        strtolower($input); // merubah semua isi variable menjadi huruf kecil
+        $input = strtolower($input); // merubah semua isi variable menjadi huruf kecil
         $arrayInput = str_split($input); 
         $vocal_array = array("a","i","u","e","o"); // array untuk check huruf vocal
         $hitungHuruf = array(0,0); // variable array untuk menyimpan jumlah huruf
